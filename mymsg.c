@@ -134,6 +134,7 @@ static struct file_operations proc_mymsg_operations = {
 	.open = mymsg_open,
 };
 
+/*可以模仿printk，将打印信息保存在环形缓冲区中*/
 static int mymsg_init(void)
 {
 	//sprintf(mylog_buf,"woaiwojia");
